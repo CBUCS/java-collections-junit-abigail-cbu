@@ -39,6 +39,12 @@ public class TestArrayList {
         Assertions.assertTrue(aList.add(4));
         Assertions.assertSame(STARTING_SIZE + 1, aList.size());
         // Assertions.assertFalse(aList.add("one")); <-- intellij already catches this as an error
+
+        ArrayList<Integer> tmp = new ArrayList<Integer>();
+        tmp.add(1);
+        tmp.add(2);
+        Assertions.assertTrue(aList.addAll(tmp));
+        Assertions.assertSame(STARTING_SIZE + 3, aList.size());
     }
 
     /**

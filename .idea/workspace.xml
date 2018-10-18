@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e0ee7fd-1161-4272-acab-faea314003a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/TestArrayList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_11_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JUnit Testing.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/TestArrayList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestArrayList.java" afterPath="$PROJECT_DIR$/src/test/java/TestArrayList.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,13 +28,14 @@
       <file leaf-file-name="TestArrayList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="68" column="92" lean-forward="false" selection-start-line="68" selection-start-column="92" selection-end-line="68" selection-end-column="92" />
+            <state relative-caret-position="-66">
+              <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#229#238#0" expanded="true" />
                 <element signature="e#527#528#0" expanded="true" />
                 <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#1165#1174#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -265,14 +252,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539753048738</updated>
-      <workItem from="1539753054732" duration="3122000" />
+      <workItem from="1539753054732" duration="3449000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JUnitTesting - 2018.10.16 at 22h 51m 04s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JUnitTesting - 2018.10.16 at 23h 37m 32s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
@@ -300,9 +284,12 @@
     <history-entry file="JUnitTesting - 2018.10.16 at 23h 53m 06s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.18 at 00h 40m 43s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3122000" />
+    <option name="totallyTimeSpent" value="3449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -316,7 +303,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -358,13 +345,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="68" column="92" lean-forward="false" selection-start-line="68" selection-start-column="92" selection-end-line="68" selection-end-column="92" />
+        <state relative-caret-position="-66">
+          <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#229#238#0" expanded="true" />
             <element signature="e#527#528#0" expanded="true" />
             <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#1165#1174#0" expanded="true" />
           </folding>
         </state>
       </provider>
