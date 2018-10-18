@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e0ee7fd-1161-4272-acab-faea314003a8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/TestArrayList.class" afterPath="$PROJECT_DIR$/target/test-classes/TestArrayList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestArrayList.java" afterPath="$PROJECT_DIR$/src/test/java/TestArrayList.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,14 +30,14 @@
       <file leaf-file-name="TestArrayList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="64" column="103" lean-forward="false" selection-start-line="64" selection-start-column="103" selection-end-line="64" selection-end-column="103" />
+            <state relative-caret-position="285">
+              <caret line="107" column="93" lean-forward="false" selection-start-line="107" selection-start-column="93" selection-end-line="107" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#277#286#0" expanded="true" />
                 <element signature="e#333#342#0" expanded="true" />
-                <element signature="e#1229#1238#0" expanded="true" />
-                <element signature="e#1283#1292#0" expanded="true" />
+                <element signature="e#1341#1350#0" expanded="true" />
+                <element signature="e#1395#1404#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -252,23 +254,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539753048738</updated>
-      <workItem from="1539753054732" duration="4807000" />
+      <workItem from="1539753054732" duration="5314000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JUnitTesting - 2018.10.16 at 23h 53m 06s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 00h 40m 43s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 00h 58m 22s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 00h 58m 48s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JUnitTesting - 2018.10.18 at 00h 59m 35s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
@@ -287,9 +277,21 @@
     <history-entry file="JUnitTesting - 2018.10.18 at 01h 05m 51s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.18 at 01h 08m 23s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.18 at 01h 09m 46s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.18 at 01h 10m 05s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.18 at 01h 14m 22s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4807000" />
+    <option name="totallyTimeSpent" value="5314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -355,14 +357,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="64" column="103" lean-forward="false" selection-start-line="64" selection-start-column="103" selection-end-line="64" selection-end-column="103" />
+        <state relative-caret-position="285">
+          <caret line="107" column="93" lean-forward="false" selection-start-line="107" selection-start-column="93" selection-end-line="107" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#277#286#0" expanded="true" />
             <element signature="e#333#342#0" expanded="true" />
-            <element signature="e#1229#1238#0" expanded="true" />
-            <element signature="e#1283#1292#0" expanded="true" />
+            <element signature="e#1341#1350#0" expanded="true" />
+            <element signature="e#1395#1404#0" expanded="true" />
           </folding>
         </state>
       </provider>

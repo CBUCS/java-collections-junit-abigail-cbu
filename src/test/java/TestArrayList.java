@@ -46,6 +46,7 @@ public class TestArrayList {
      * Make sure that an integer is added to the list.
      * Make sure that the size of the list increases.
      * Make sure you can only add Integers.
+     * Make sure you can only add initial collection into collection (can't add different collections together)
      */
     @Test
     public void add() {
@@ -80,7 +81,6 @@ public class TestArrayList {
         Assertions.assertTrue(aSet.addAll(tmpSet));
         Assertions.assertSame(STARTING_SIZE + 3, aSet.size());
 
-
     }
 
     /**
@@ -95,12 +95,24 @@ public class TestArrayList {
         /*** ARRAY LIST ***/
         Assertions.assertTrue(aList.remove((Integer) 1));
         Assertions.assertEquals(STARTING_SIZE - 1, aList.size());
-        Assertions.assertEquals(2, (int)aList.remove(0)); // have to cast to differentiate between removing index or object
+        Assertions.assertEquals(2, (int) aList.remove(0)); // have to cast to differentiate between removing index or object
         Assertions.assertEquals(STARTING_SIZE - 2, aList.size());
         Assertions.assertFalse(aList.isEmpty());
         Assertions.assertTrue(aList.removeAll(aList));
         Assertions.assertFalse(aList.removeAll(aList)); // here, aList should not have anything in it
         Assertions.assertTrue(aList.isEmpty());
+
+        /*** SET ***/
+        Assertions.assertTrue(aSet.remove((Integer) 1));
+        Assertions.assertEquals(STARTING_SIZE - 1, aSet.size());
+        Assertions.assertFalse(aSet.remove(1)); // already removed this value, so should fail
+        Assertions.assertTrue(aSet.remove((Integer) 2));
+        Assertions.assertEquals(STARTING_SIZE - 2, aSet.size());
+        Assertions.assertFalse(aSet.isEmpty());
+        Assertions.assertTrue(aSet.removeAll(aSet));
+        Assertions.assertFalse(aSet.removeAll(aSet)); // here, aList should not have anything in it
+        Assertions.assertTrue(aSet.isEmpty());
+
     }
 
     /**
@@ -110,6 +122,16 @@ public class TestArrayList {
     public void clear() {
         /*** ARRAY LIST ***/
         Assertions.assertTrue(aList.size() > 0);
-        Assertions.assertArrayEquals(new Integer[]{1,2,3}, aList.toArray()); // can't do int
+        Assertions.assertArrayEquals(new Integer[]{1, 2, 3}, aList.toArray()); // can't do int
+        aList.clear();
+        Assertions.assertTrue(aList.size() == 0);
+
+        /*** SET ***/
+        Assertions.assertTrue(aSet.size() > 0);
+        Assertions.assertArrayEquals(new Integer[]{1, 2, 3}, aSet.toArray()); // can't do int
+        aSet.clear();
+        Assertions.assertTrue(aSet.size() == 0);
+
+
     }
 }
