@@ -136,6 +136,10 @@ public class TestArrayList {
         Assertions.assertFalse(aSet.removeAll(aSet)); // here, aList should not have anything in it
         Assertions.assertTrue(aSet.isEmpty());
 
+        /*** LINKED LIST ***/
+        Assertions.assertTrue(aLink.remove((Integer) 1));
+        Assertions.assertEquals(STARTING_SIZE - 1, aLink.size());
+
     }
 
     /**
