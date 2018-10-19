@@ -1,15 +1,23 @@
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Set;
 
+/**
+ ArrayList
+ Set
+ LinkedList
+ Stack
+ Queue
+ HashMap
+ */
 public class TestArrayList {
 
     private ArrayList<Integer> aList = new ArrayList<Integer>();
     private Set<Integer> aSet = new HashSet<Integer>();
+    private LinkedList<Integer> aLink = new LinkedList<Integer>();
     private int STARTING_SIZE = 0;
 
     /**
@@ -24,6 +32,10 @@ public class TestArrayList {
         aSet.add(1);
         aSet.add(2);
         aSet.add(3);
+
+        aLink.add(1);
+        aLink.add(2);
+        aLink.add(3);
 
         STARTING_SIZE = aList.size();
     }
@@ -53,6 +65,7 @@ public class TestArrayList {
 
         ArrayList<Integer> tmpArrayList = new ArrayList<Integer>();
         Set<Integer> tmpSet = new HashSet<Integer>();
+        LinkedList<Integer> tmpLink = new LinkedList<Integer>();
 
         /*** ARRAY LIST ***/
         Assertions.assertTrue(STARTING_SIZE == 3);
@@ -80,6 +93,16 @@ public class TestArrayList {
         tmpSet.add(6);
         Assertions.assertTrue(aSet.addAll(tmpSet));
         Assertions.assertSame(STARTING_SIZE + 3, aSet.size());
+
+        /*** LINKED LIST ***/
+        Assertions.assertTrue(aLink.add(4));
+        Assertions.assertSame(STARTING_SIZE + 1, aLink.size());
+
+        tmpLink.add(1);
+        Assertions.assertTrue(aLink.addAll(tmpLink));
+        Assertions.assertTrue(aLink.addAll(tmpSet)); // you can add a set to a linked list
+        Assertions.assertTrue(aLink.addAll(tmpArrayList)); // you can add an array list to a linked list
+        Assertions.assertSame(STARTING_SIZE + 6, aLink.size());
 
     }
 
