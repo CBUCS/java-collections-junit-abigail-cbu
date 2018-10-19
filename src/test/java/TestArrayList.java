@@ -24,7 +24,7 @@ public class TestArrayList {
      * Start each test with 3 values each collection.
      */
     @BeforeEach
-    public void init() {
+    public void Initialize() {
         aList.add(1);
         aList.add(2);
         aList.add(3);
@@ -44,7 +44,7 @@ public class TestArrayList {
      * Test if size method works in Array List
      */
     @Test
-    public void size() {
+    public void TestSize() {
         /*** ARRAY LIST ***/
         Assertions.assertEquals(STARTING_SIZE, aList.size());
 
@@ -61,7 +61,7 @@ public class TestArrayList {
      * Make sure you can only add initial collection into collection (can't add different collections together)
      */
     @Test
-    public void add() {
+    public void TestAdd() {
 
         ArrayList<Integer> tmpArrayList = new ArrayList<Integer>();
         Set<Integer> tmpSet = new HashSet<Integer>();
@@ -114,7 +114,7 @@ public class TestArrayList {
      * Make sure that you can't remove objects from empty list.
      */
     @Test
-    public void remove() {
+    public void TestRemove() {
         /*** ARRAY LIST ***/
         Assertions.assertTrue(aList.remove((Integer) 1));
         Assertions.assertEquals(STARTING_SIZE - 1, aList.size());
@@ -146,7 +146,7 @@ public class TestArrayList {
      * Test if clear method works
      */
     @Test
-    public void clear() {
+    public void TestClear() {
         /*** ARRAY LIST ***/
         Assertions.assertTrue(aList.size() > 0);
         Assertions.assertArrayEquals(new Integer[]{1, 2, 3}, aList.toArray()); // can't do int
