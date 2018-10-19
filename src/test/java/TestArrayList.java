@@ -6,12 +6,11 @@ import java.util.LinkedList;
 import java.util.Set;
 
 /**
- ArrayList
- Set
- LinkedList
- Stack
- Queue
- HashMap
+ Set (add, clear, contains, containsAll, isEmpty, equals, remove, retainAll, size)
+ LinkedList (add, clear, contains, get, indexOf, isEmpty, lastIndexOf, remove, size, sort)
+ Stack (all methods)
+ Queue (all methods)
+ HashMap (Clear, compute, containsKey, containsValue, equals, get, isEmpty, put, remove, replace, size)
  */
 public class TestArrayList {
 
