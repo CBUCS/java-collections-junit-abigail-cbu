@@ -28,8 +28,8 @@
       <file leaf-file-name="TestArrayList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1715">
-              <caret line="171" column="62" lean-forward="false" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
+            <state relative-caret-position="630">
+              <caret line="208" column="30" lean-forward="false" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#474#483#0" expanded="true" />
@@ -254,32 +254,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539753048738</updated>
-      <workItem from="1539753054732" duration="8669000" />
+      <workItem from="1539753054732" duration="9379000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JUnitTesting - 2018.10.19 at 23h 39m 50s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.19 at 23h 49m 49s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.19 at 23h 50m 25s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.19 at 23h 59m 16s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.19 at 23h 59m 38s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.20 at 00h 00m 08s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.20 at 00h 00m 27s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JUnitTesting - 2018.10.20 at 00h 01m 05s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
@@ -289,9 +268,30 @@
     <history-entry file="JUnitTesting - 2018.10.20 at 00h 04m 41s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 07m 37s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 09m 16s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 09m 42s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 10m 04s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 10m 28s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 14m 05s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 16m 31s.xml">
+      <configuration name="JUnitTesting" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8669000" />
+    <option name="totallyTimeSpent" value="9379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -357,8 +357,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1715">
-          <caret line="171" column="62" lean-forward="false" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
+        <state relative-caret-position="630">
+          <caret line="208" column="30" lean-forward="false" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#474#483#0" expanded="true" />

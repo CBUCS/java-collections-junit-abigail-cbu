@@ -119,7 +119,7 @@ public class TestArrayList {
         /*** LINKED LIST ***/
         Assertions.assertTrue(aLink.remove((Integer) 1));
         Assertions.assertEquals(STARTING_SIZE - 1, aLink.size());
-        Assertions.assertFalse(aLink.remove((Integer)1)); // already removed this value, so should fail
+        Assertions.assertFalse(aLink.remove((Integer) 1)); // already removed this value, so should fail
         Assertions.assertTrue(aLink.remove((Integer) 2));
         Assertions.assertEquals(STARTING_SIZE - 2, aLink.size());
         Assertions.assertFalse(aLink.isEmpty());
@@ -173,6 +173,40 @@ public class TestArrayList {
         Assertions.assertTrue(aSet.containsAll(tmpSet));
         tmpSet.add("1");
         Assertions.assertFalse(aSet.containsAll(tmpSet));
+
+    }
+
+    /**
+     * Check if equals method works
+     * make sure equals doesn't mean the same as contains
+     * check if you don't have the correct elements, it doesn't equal
+     * make sure it equals if you have the correct elements
+     */
+    @Test
+    public void testEquals() {
+        /*** SET ***/
+        Assertions.assertFalse(aSet.equals(1));
+
+        Integer elements[] = new Integer[]{2, 3};
+        Set tmpSet = new HashSet(Arrays.asList(elements));
+        Assertions.assertFalse(aSet.equals(tmpSet));
+        tmpSet.add(1);
+        Assertions.assertTrue(aSet.equals(tmpSet));
+        tmpSet.add(1);
+        Assertions.assertTrue(aSet.equals(tmpSet));
+        tmpSet.add(4);
+        Assertions.assertFalse(aSet.equals(tmpSet));
+
+
+    }
+
+    @Test
+    public void testRetainAll() {
+        /*** SET ***/
+        Integer elements[] = new Integer[]{2, 3};
+        Set tmpSet = new HashSet(Arrays.asList(elements));
+
+        Assertions.assertTrue(aSet.retainAll(tmpSet));
 
     }
 }
