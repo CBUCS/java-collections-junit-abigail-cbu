@@ -28,16 +28,16 @@
       <file leaf-file-name="TestArrayList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1671">
-              <caret line="12" column="103" lean-forward="false" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
+            <state relative-caret-position="1715">
+              <caret line="171" column="62" lean-forward="false" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#549#558#0" expanded="true" />
-                <element signature="e#605#614#0" expanded="true" />
-                <element signature="e#672#681#0" expanded="true" />
-                <element signature="e#1761#1770#0" expanded="true" />
-                <element signature="e#1815#1824#0" expanded="true" />
-                <element signature="e#1880#1889#0" expanded="true" />
+                <element signature="e#474#483#0" expanded="true" />
+                <element signature="e#530#539#0" expanded="true" />
+                <element signature="e#597#606#0" expanded="true" />
+                <element signature="e#1862#1871#0" expanded="true" />
+                <element signature="e#1916#1925#0" expanded="true" />
+                <element signature="e#1981#1990#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -254,44 +254,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539753048738</updated>
-      <workItem from="1539753054732" duration="6531000" />
+      <workItem from="1539753054732" duration="8669000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JUnitTesting - 2018.10.18 at 01h 10m 05s.xml">
+    <history-entry file="JUnitTesting - 2018.10.19 at 23h 39m 50s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 01h 14m 22s.xml">
+    <history-entry file="JUnitTesting - 2018.10.19 at 23h 49m 49s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 17h 37m 31s.xml">
+    <history-entry file="JUnitTesting - 2018.10.19 at 23h 50m 25s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 17h 38m 17s.xml">
+    <history-entry file="JUnitTesting - 2018.10.19 at 23h 59m 16s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 17h 38m 55s.xml">
+    <history-entry file="JUnitTesting - 2018.10.19 at 23h 59m 38s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 17h 39m 54s.xml">
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 00m 08s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 17h 40m 16s.xml">
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 00m 27s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 17h 41m 26s.xml">
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 01m 05s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 17h 44m 18s.xml">
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 02m 16s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JUnitTesting - 2018.10.18 at 17h 46m 55s.xml">
+    <history-entry file="JUnitTesting - 2018.10.20 at 00h 04m 41s.xml">
       <configuration name="JUnitTesting" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6531000" />
+    <option name="totallyTimeSpent" value="8669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -305,7 +305,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21523578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -334,7 +334,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -357,16 +357,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1671">
-          <caret line="12" column="103" lean-forward="false" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
+        <state relative-caret-position="1715">
+          <caret line="171" column="62" lean-forward="false" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#549#558#0" expanded="true" />
-            <element signature="e#605#614#0" expanded="true" />
-            <element signature="e#672#681#0" expanded="true" />
-            <element signature="e#1761#1770#0" expanded="true" />
-            <element signature="e#1815#1824#0" expanded="true" />
-            <element signature="e#1880#1889#0" expanded="true" />
+            <element signature="e#474#483#0" expanded="true" />
+            <element signature="e#530#539#0" expanded="true" />
+            <element signature="e#597#606#0" expanded="true" />
+            <element signature="e#1862#1871#0" expanded="true" />
+            <element signature="e#1916#1925#0" expanded="true" />
+            <element signature="e#1981#1990#0" expanded="true" />
           </folding>
         </state>
       </provider>

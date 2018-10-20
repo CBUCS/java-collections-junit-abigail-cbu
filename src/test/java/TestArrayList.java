@@ -1,16 +1,13 @@
 import org.junit.jupiter.api.*;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Set;
+import java.util.*;
 
 /**
- Set (add, clear, contains, containsAll, isEmpty, equals, remove, retainAll, size)
- LinkedList (add, clear, contains, get, indexOf, isEmpty, lastIndexOf, remove, size, sort)
- Stack (all methods)
- Queue (all methods)
- HashMap (Clear, compute, containsKey, containsValue, equals, get, isEmpty, put, remove, replace, size)
+ * Set (add, clear, contains, containsAll, isEmpty, equals, remove, retainAll, size)
+ * LinkedList (add, clear, contains, get, indexOf, isEmpty, lastIndexOf, remove, size, sort)
+ * Stack (all methods)
+ * Queue (all methods)
+ * HashMap (Clear, compute, containsKey, containsValue, equals, get, isEmpty, put, remove, replace, size)
  */
 public class TestArrayList {
 
@@ -23,7 +20,7 @@ public class TestArrayList {
      * Start each test with 3 values each collection.
      */
     @BeforeEach
-    public void Initialize() {
+    public void initialize() {
         aList.add(1);
         aList.add(2);
         aList.add(3);
@@ -40,15 +37,19 @@ public class TestArrayList {
     }
 
     /**
-     * Test if size method works in Array List
+     * Test if size method works by
+     * check if it is equal to the correct size
+     * check if it not equal to the correct size
      */
     @Test
-    public void TestSize() {
-        /*** ARRAY LIST ***/
-        Assertions.assertEquals(STARTING_SIZE, aList.size());
-
+    public void testSize() {
         /*** SET ***/
         Assertions.assertEquals(3, aSet.size());
+        Assertions.assertFalse(aSet.size() == 2);
+
+        /*** LINKED LIST ***/
+        Assertions.assertEquals(3, aLink.size());
+        Assertions.assertFalse(aLink.size() == 2);
 
     }
 
@@ -60,23 +61,11 @@ public class TestArrayList {
      * Make sure you can only add initial collection into collection (can't add different collections together)
      */
     @Test
-    public void TestAdd() {
+    public void testAdd() {
 
         ArrayList<Integer> tmpArrayList = new ArrayList<Integer>();
         Set<Integer> tmpSet = new HashSet<Integer>();
         LinkedList<Integer> tmpLink = new LinkedList<Integer>();
-
-        /*** ARRAY LIST ***/
-        Assertions.assertTrue(STARTING_SIZE == 3);
-        Assertions.assertTrue(aList.add(4));
-        Assertions.assertSame(STARTING_SIZE + 1, aList.size());
-        // Assertions.assertFalse(aList.add("one")); <-- intellij already catches this as an error
-
-        tmpArrayList.add(1);
-        tmpArrayList.add(2);
-        Assertions.assertTrue(aList.addAll(tmpArrayList)); // can add same int in array list
-        Assertions.assertFalse(aList.addAll(tmpSet)); // can't add different collection into array list
-        Assertions.assertSame(STARTING_SIZE + 3, aList.size());
 
         /*** SET ***/
         Assertions.assertTrue(aSet.add(4));
@@ -94,36 +83,28 @@ public class TestArrayList {
         Assertions.assertSame(STARTING_SIZE + 3, aSet.size());
 
         /*** LINKED LIST ***/
+        // I decided to just build off from the previous made tmp collections in this method
         Assertions.assertTrue(aLink.add(4));
         Assertions.assertSame(STARTING_SIZE + 1, aLink.size());
 
         tmpLink.add(1);
         Assertions.assertTrue(aLink.addAll(tmpLink));
         Assertions.assertTrue(aLink.addAll(tmpSet)); // you can add a set to a linked list
-        Assertions.assertTrue(aLink.addAll(tmpArrayList)); // you can add an array list to a linked list
-        Assertions.assertSame(STARTING_SIZE + 6, aLink.size());
+        Assertions.assertFalse(aLink.addAll(tmpArrayList)); // you cannot add an array list to a linked list
+        Assertions.assertSame(STARTING_SIZE + 4, aLink.size());
+
 
     }
 
     /**
-     * Test if remove method works
+     * Test if remove and isEmpty method works
      * Make sure that an integer is removed from the list.
      * Make sure that the you are able to remove an integer from an index.
      * make sure that you are able to remove all objects in list.
      * Make sure that you can't remove objects from empty list.
      */
     @Test
-    public void TestRemove() {
-        /*** ARRAY LIST ***/
-        Assertions.assertTrue(aList.remove((Integer) 1));
-        Assertions.assertEquals(STARTING_SIZE - 1, aList.size());
-        Assertions.assertEquals(2, (int) aList.remove(0)); // have to cast to differentiate between removing index or object
-        Assertions.assertEquals(STARTING_SIZE - 2, aList.size());
-        Assertions.assertFalse(aList.isEmpty());
-        Assertions.assertTrue(aList.removeAll(aList));
-        Assertions.assertFalse(aList.removeAll(aList)); // here, aList should not have anything in it
-        Assertions.assertTrue(aList.isEmpty());
-
+    public void testRemoveAndIsEmpty() {
         /*** SET ***/
         Assertions.assertTrue(aSet.remove((Integer) 1));
         Assertions.assertEquals(STARTING_SIZE - 1, aSet.size());
@@ -138,26 +119,60 @@ public class TestArrayList {
         /*** LINKED LIST ***/
         Assertions.assertTrue(aLink.remove((Integer) 1));
         Assertions.assertEquals(STARTING_SIZE - 1, aLink.size());
+        Assertions.assertFalse(aLink.remove((Integer)1)); // already removed this value, so should fail
+        Assertions.assertTrue(aLink.remove((Integer) 2));
+        Assertions.assertEquals(STARTING_SIZE - 2, aLink.size());
+        Assertions.assertFalse(aLink.isEmpty());
+        Assertions.assertTrue(aLink.removeAll(aLink));
+        Assertions.assertFalse(aLink.removeAll(aLink)); // here, aList should not have anything in it
+        Assertions.assertTrue(aLink.isEmpty());
 
     }
 
     /**
-     * Test if clear method works
+     * Test if clear method works by
+     * checking if elements are contained within collection
+     * clear the elements
+     * and then check if there are no longer any elements in the collection
      */
     @Test
-    public void TestClear() {
-        /*** ARRAY LIST ***/
-        Assertions.assertTrue(aList.size() > 0);
-        Assertions.assertArrayEquals(new Integer[]{1, 2, 3}, aList.toArray()); // can't do int
-        aList.clear();
-        Assertions.assertTrue(aList.size() == 0);
-
+    public void testClear() {
         /*** SET ***/
         Assertions.assertTrue(aSet.size() > 0);
         Assertions.assertArrayEquals(new Integer[]{1, 2, 3}, aSet.toArray()); // can't do int
         aSet.clear();
         Assertions.assertTrue(aSet.size() == 0);
 
+        /*** LINKED LIST ***/
+        Assertions.assertTrue(aLink.size() > 0);
+        Assertions.assertArrayEquals(new Integer[]{1, 2, 3}, aLink.toArray()); // can't do int
+        aLink.clear();
+        Assertions.assertTrue(aLink.size() == 0);
+
+    }
+
+    @Test
+    public void testContainsAndContainsAll() {
+        /*** SET ***/
+        Assertions.assertTrue(aSet.size() > 0);
+        Assertions.assertTrue(aSet.contains(1));
+        Assertions.assertFalse(aSet.contains("1"));
+
+        Integer elements[] = new Integer[]{2, 3};
+        Set tmpSet = new HashSet(Arrays.asList(elements));
+        Assertions.assertTrue(aSet.containsAll(tmpSet));
+        tmpSet.add("1");
+        Assertions.assertFalse(aSet.containsAll(tmpSet));
+
+        /*** LINKED LIST ***/
+        Assertions.assertTrue(aLink.size() > 0);
+        Assertions.assertTrue(aLink.contains(1));
+        Assertions.assertFalse(aLink.contains("1"));
+
+        tmpSet.remove("1"); // tmpSet should only contain 2, 3
+        Assertions.assertTrue(aSet.containsAll(tmpSet));
+        tmpSet.add("1");
+        Assertions.assertFalse(aSet.containsAll(tmpSet));
 
     }
 }
