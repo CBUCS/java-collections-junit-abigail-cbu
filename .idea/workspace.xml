@@ -18,12 +18,13 @@
       <file leaf-file-name="TestArrayList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="489" column="5" lean-forward="false" selection-start-line="489" selection-start-column="5" selection-end-line="489" selection-end-column="5" />
+            <state relative-caret-position="-705">
+              <caret line="276" column="26" lean-forward="false" selection-start-line="276" selection-start-column="26" selection-end-line="276" selection-end-column="26" />
               <folding>
                 <element signature="e#837#854#0" expanded="true" />
                 <element signature="docComment;method#initialize#0;class#TestArrayList#0" expanded="false" />
                 <element signature="docComment;method#testSize#0;class#TestArrayList#0" expanded="false" />
+                <element signature="method#testSize#0;class#TestArrayList#0" expanded="false" />
                 <element signature="docComment;method#testAdd#0;class#TestArrayList#0" expanded="false" />
                 <element signature="method#testAdd#0;class#TestArrayList#0" expanded="false" />
                 <element signature="docComment;method#testRemoveAndIsEmpty#0;class#TestArrayList#0" expanded="false" />
@@ -34,6 +35,7 @@
                 <element signature="method#testContainsAndContainsAll#0;class#TestArrayList#0" expanded="false" />
                 <element signature="docComment;method#testEquals#0;class#TestArrayList#0" expanded="false" />
                 <element signature="method#testEquals#0;class#TestArrayList#0" expanded="false" />
+                <element signature="e#9098#9115#0" expanded="true" />
                 <element signature="docComment;method#testRetainAll#0;class#TestArrayList#0" expanded="false" />
                 <element signature="method#testRetainAll#0;class#TestArrayList#0" expanded="false" />
                 <element signature="docComment;method#testGet#0;class#TestArrayList#0" expanded="false" />
@@ -58,7 +60,7 @@
                 <element signature="method#testQueueElement#0;class#TestArrayList#0" expanded="false" />
                 <element signature="docComment;method#testQueueOffer#0;class#TestArrayList#0" expanded="false" />
                 <element signature="method#testQueueOffer#0;class#TestArrayList#0" expanded="false" />
-                <element signature="e#13863#13949#0" expanded="false" />
+                <element signature="e#15591#15677#0" expanded="false" />
                 <element signature="docComment;method#testQueuePeek#0;class#TestArrayList#0" expanded="false" />
                 <element signature="method#testQueuePeek#0;class#TestArrayList#0" expanded="false" />
                 <element signature="docComment;method#testQueuePoll#0;class#TestArrayList#0" expanded="false" />
@@ -178,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestArrayList.testQueueRemove">
+  <component name="RunManager" selected="JUnit.TestArrayList.testGet">
     <configuration name="JUnitTesting" type="JUnit" factoryName="JUnit" singleton="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JUnit Testing" />
@@ -200,14 +202,14 @@
       <dir value="$PROJECT_DIR$/src/test/java" />
       <patterns />
     </configuration>
-    <configuration name="TestArrayList.testQueueElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestArrayList.testClear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JUnit Testing" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testQueueElement" />
+      <option name="METHOD_NAME" value="testClear" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -220,14 +222,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestArrayList.testQueueOffer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestArrayList.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JUnit Testing" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testQueueOffer" />
+      <option name="METHOD_NAME" value="testEquals" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -240,14 +242,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestArrayList.testQueuePeek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestArrayList.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JUnit Testing" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testQueuePeek" />
+      <option name="METHOD_NAME" value="testGet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -260,14 +262,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestArrayList.testQueuePoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestArrayList.testRemoveAndIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JUnit Testing" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testQueuePoll" />
+      <option name="METHOD_NAME" value="testRemoveAndIsEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -280,14 +282,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestArrayList.testQueueRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestArrayList.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JUnit Testing" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testQueueRemove" />
+      <option name="METHOD_NAME" value="testSize" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -383,19 +385,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.JUnitTesting" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueueElement" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueueOffer" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueuePeek" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueuePoll" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueueRemove" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestArrayList.testSize" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestArrayList.testRemoveAndIsEmpty" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestArrayList.testClear" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestArrayList.testEquals" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestArrayList.testGet" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueueRemove" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueuePoll" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueuePeek" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueueOffer" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestArrayList.testQueueElement" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestArrayList.testGet" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestArrayList.testEquals" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestArrayList.testClear" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestArrayList.testRemoveAndIsEmpty" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestArrayList.testSize" />
       </list>
     </recent_temporary>
   </component>
@@ -409,31 +411,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539753048738</updated>
-      <workItem from="1539753054732" duration="17373000" />
+      <workItem from="1539753054732" duration="20094000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JUnitTesting - 2018.10.21 at 21h 20m 15s.xml">
-      <configuration name="JUnitTesting" configurationId="JUnit" />
+    <history-entry file="TestArrayList_testClear - 2018.10.21 at 22h 56m 41s.xml">
+      <configuration name="TestArrayList.testClear" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestArrayList_testQueueElement - 2018.10.21 at 21h 09m 51s.xml">
-      <configuration name="TestArrayList.testQueueElement" configurationId="JUnit" />
+    <history-entry file="TestArrayList_testEquals - 2018.10.21 at 23h 03m 09s.xml">
+      <configuration name="TestArrayList.testEquals" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestArrayList_testQueueOffer - 2018.10.21 at 21h 18m 23s.xml">
-      <configuration name="TestArrayList.testQueueOffer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestArrayList_testQueuePeek - 2018.10.21 at 21h 23m 00s.xml">
-      <configuration name="TestArrayList.testQueuePeek" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestArrayList_testQueuePeek - 2018.10.21 at 21h 26m 05s.xml">
-      <configuration name="TestArrayList.testQueuePeek" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestArrayList_testQueuePoll - 2018.10.21 at 21h 29m 31s.xml">
-      <configuration name="TestArrayList.testQueuePoll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestArrayList_testQueueRemove - 2018.10.21 at 21h 32m 36s.xml">
-      <configuration name="TestArrayList.testQueueRemove" configurationId="JUnit" />
+    <history-entry file="TestArrayList_testGet - 2018.10.21 at 23h 04m 49s.xml">
+      <configuration name="TestArrayList.testGet" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestArrayList_testQueueRemove - 2018.10.21 at 21h 33m 47s.xml">
       <configuration name="TestArrayList.testQueueRemove" configurationId="JUnit" />
@@ -444,9 +434,21 @@
     <history-entry file="TestArrayList_testQueueRemove - 2018.10.21 at 21h 34m 38s.xml">
       <configuration name="TestArrayList.testQueueRemove" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestArrayList_testRemoveAndIsEmpty - 2018.10.21 at 22h 36m 26s.xml">
+      <configuration name="TestArrayList.testRemoveAndIsEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayList_testRemoveAndIsEmpty - 2018.10.21 at 22h 37m 49s.xml">
+      <configuration name="TestArrayList.testRemoveAndIsEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayList_testRemoveAndIsEmpty - 2018.10.21 at 22h 38m 16s.xml">
+      <configuration name="TestArrayList.testRemoveAndIsEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestArrayList_testSize - 2018.10.21 at 21h 42m 57s.xml">
+      <configuration name="TestArrayList.testSize" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17373000" />
+    <option name="totallyTimeSpent" value="20094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -460,7 +462,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22879177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22879177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -489,7 +491,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -512,12 +514,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="489" column="5" lean-forward="false" selection-start-line="489" selection-start-column="5" selection-end-line="489" selection-end-column="5" />
+        <state relative-caret-position="-705">
+          <caret line="276" column="26" lean-forward="false" selection-start-line="276" selection-start-column="26" selection-end-line="276" selection-end-column="26" />
           <folding>
             <element signature="e#837#854#0" expanded="true" />
             <element signature="docComment;method#initialize#0;class#TestArrayList#0" expanded="false" />
             <element signature="docComment;method#testSize#0;class#TestArrayList#0" expanded="false" />
+            <element signature="method#testSize#0;class#TestArrayList#0" expanded="false" />
             <element signature="docComment;method#testAdd#0;class#TestArrayList#0" expanded="false" />
             <element signature="method#testAdd#0;class#TestArrayList#0" expanded="false" />
             <element signature="docComment;method#testRemoveAndIsEmpty#0;class#TestArrayList#0" expanded="false" />
@@ -528,6 +531,7 @@
             <element signature="method#testContainsAndContainsAll#0;class#TestArrayList#0" expanded="false" />
             <element signature="docComment;method#testEquals#0;class#TestArrayList#0" expanded="false" />
             <element signature="method#testEquals#0;class#TestArrayList#0" expanded="false" />
+            <element signature="e#9098#9115#0" expanded="true" />
             <element signature="docComment;method#testRetainAll#0;class#TestArrayList#0" expanded="false" />
             <element signature="method#testRetainAll#0;class#TestArrayList#0" expanded="false" />
             <element signature="docComment;method#testGet#0;class#TestArrayList#0" expanded="false" />
@@ -552,7 +556,7 @@
             <element signature="method#testQueueElement#0;class#TestArrayList#0" expanded="false" />
             <element signature="docComment;method#testQueueOffer#0;class#TestArrayList#0" expanded="false" />
             <element signature="method#testQueueOffer#0;class#TestArrayList#0" expanded="false" />
-            <element signature="e#13863#13949#0" expanded="false" />
+            <element signature="e#15591#15677#0" expanded="false" />
             <element signature="docComment;method#testQueuePeek#0;class#TestArrayList#0" expanded="false" />
             <element signature="method#testQueuePeek#0;class#TestArrayList#0" expanded="false" />
             <element signature="docComment;method#testQueuePoll#0;class#TestArrayList#0" expanded="false" />

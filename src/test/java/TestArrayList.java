@@ -50,9 +50,9 @@ public class TestArrayList {
     }
 
     /**
-     * Set (add, clear, contains, containsAll, isEmpty, equals, remove, retainAll, size)
-     * LinkedList (add, clear, contains, get, indexOf, isEmpty, lastIndexOf, remove, size, sort)
-     * HashMap (Clear, equals, get, isEmpty, remove, size)
+     * Set (size, add, remove, isEmpty, clear, contains, containsAll, equals, retainAll)
+     * LinkedList (size, add, remove, isEmpty, clear, contains, get, indexOf, lastIndexOf, sort)
+     * HashMap (size, add, remove, isEmpty, clear, equals, get)
      */
 
     /**
@@ -70,6 +70,9 @@ public class TestArrayList {
         Assertions.assertEquals(3, aLink.size());
         Assertions.assertFalse(aLink.size() == 2);
 
+        /*** HASH MAP ***/
+        Assertions.assertEquals(3, aHashMap.size());
+        Assertions.assertFalse(aHashMap.size() == 2);
     }
 
     /**
@@ -146,6 +149,15 @@ public class TestArrayList {
         Assertions.assertFalse(aLink.removeAll(aLink)); // here, aList should not have anything in it
         Assertions.assertTrue(aLink.isEmpty());
 
+        /*** HASH MAP ***/
+        Assertions.assertEquals("one", aHashMap.remove(1));
+        Assertions.assertEquals(STARTING_SIZE - 1, aHashMap.size());
+        Assertions.assertNull(aHashMap.remove(1)); // already removed this value, so should return null
+        Assertions.assertEquals("two", aHashMap.remove(2));
+        Assertions.assertEquals(STARTING_SIZE - 2, aHashMap.size());
+        Assertions.assertFalse(aHashMap.isEmpty());
+        aHashMap.remove(3);
+        Assertions.assertTrue(aHashMap.isEmpty());
     }
 
     /**
@@ -168,6 +180,11 @@ public class TestArrayList {
         aLink.clear();
         Assertions.assertTrue(aLink.size() == 0);
 
+        /*** HASH MAP ***/
+        Assertions.assertTrue(aHashMap.size() > 0);
+        Assertions.assertArrayEquals(new Object[]{"one", "two", "three"}, aHashMap.values().toArray());
+        aHashMap.clear();
+        Assertions.assertTrue(aHashMap.size() == 0);
     }
 
     /**
@@ -219,6 +236,22 @@ public class TestArrayList {
         Assertions.assertTrue(aSet.equals(tmpSet));
         tmpSet.add(4);
         Assertions.assertFalse(aSet.equals(tmpSet));
+
+        /*** HASH MAP ***/
+        Assertions.assertFalse(aHashMap.equals(1));
+
+        HashMap<Integer, String> tmpHashMap = new HashMap<Integer, String>();
+        tmpHashMap.put(1, "one");
+        tmpHashMap.put(2, "two");
+
+
+        Assertions.assertFalse(aHashMap.equals(tmpHashMap));
+        tmpHashMap.put(3, "three");
+        Assertions.assertTrue(aHashMap.equals(tmpHashMap));
+        tmpHashMap.put(1, "one");
+        Assertions.assertTrue(aHashMap.equals(tmpHashMap));
+        tmpHashMap.put(4,"four");
+        Assertions.assertFalse(aHashMap.equals(tmpHashMap));
     }
 
     /**
@@ -249,6 +282,11 @@ public class TestArrayList {
         aLink.remove(0);
         Assertions.assertNotEquals(1, aLink.get(0));
 
+        /*** HASH MAP ***/
+        Assertions.assertEquals("one", aHashMap.get(1));
+        Assertions.assertNotEquals("two", aHashMap.get(1));
+        aHashMap.remove(1);
+        Assertions.assertNotEquals("one", aHashMap.get(1));
     }
 
     /**
