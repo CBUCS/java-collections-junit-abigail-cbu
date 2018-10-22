@@ -16,6 +16,7 @@ public class TestArrayList {
     private LinkedList<Integer> aLink = new LinkedList<Integer>();
     private Stack<Integer> aStack = new Stack<Integer>();
     private Queue<Integer> aQueue = new LinkedList<Integer>();
+    private HashMap<Integer, String> aHashMap = new HashMap<Integer, String>();
     private final int STARTING_SIZE = 3;
 
     /**
@@ -42,7 +43,17 @@ public class TestArrayList {
         aQueue.add(1);
         aQueue.add(2);
         aQueue.add(3);
+
+        aHashMap.put(1, "one");
+        aHashMap.put(2, "two");
+        aHashMap.put(3, "three");
     }
+
+    /**
+     * Set (add, clear, contains, containsAll, isEmpty, equals, remove, retainAll, size)
+     * LinkedList (add, clear, contains, get, indexOf, isEmpty, lastIndexOf, remove, size, sort)
+     * HashMap (Clear, equals, get, isEmpty, remove, size)
+     */
 
     /**
      * Test if size method works by
@@ -370,8 +381,111 @@ public class TestArrayList {
      */
     @Test
     public void testQueueElement() {
-        Assertions.assertEquals((Integer)1, aQueue.element());
+        Assertions.assertEquals((Integer) 1, aQueue.element());
+        aQueue.remove();
+        Assertions.assertNotEquals(1, aQueue.element());
+        Assertions.assertEquals((Integer) 2, aQueue.element());
+    }
+
+    /**
+     * Test to make sure offer method works in queue.
+     * Make sure offer method does not fail in linked list queue
+     */
+    @Test
+    public void testQueueOffer() {
+        Assertions.assertTrue(aQueue.offer(1));
+        // Assertions.assertFalse(aQueue.offer("one")); // intellij handles bad types
+        Assertions.assertEquals(STARTING_SIZE + 1, aQueue.size());
+
+        // Note: below is code that tried to make the offer() return a fail to add an element.
+        // I didn't understand how to use BlockingQueue
+        /*
+        boolean success = true;
+        Integer number = 0;
+        while(success){
+            success = aQueue.offer(number);
+            number++;
+        }
+        Assertions.assertFalse(success);
+        */
+    }
+
+    /**
+     * Make sure Peek works for Queue.
+     * Make sure that it returns the object at the head of the queue.
+     * Make sure the size does not change a peek().
+     * Make sure it returns new object if the previous head object was removed.
+     * Make sure it returns null if queue is empty.
+     */
+    @Test
+    public void testQueuePeek() {
+        Assertions.assertEquals((Integer) 1, aQueue.peek());
+        Assertions.assertEquals(STARTING_SIZE, aQueue.size());
+
+        aQueue.remove(); // remove "1"
+        Assertions.assertEquals(STARTING_SIZE - 1, aQueue.size());
+        Assertions.assertNotEquals(1, aQueue.peek());
+        Assertions.assertEquals((Integer) 2, aQueue.peek());
+
+        aQueue.remove(); // remove "2"
+        aQueue.remove(); // remove "3"
+        Assertions.assertNull(aQueue.peek());
+    }
+
+    /**
+     * Make sure Poll method works for Queue.
+     * Make sure it displays the head of the queue and removes the head of the queue.
+     * Make sure the size of the queue decreases after a poll.
+     * Make sure poll returns a null if the queue is empty.
+     */
+    @Test
+    public void testQueuePoll() {
+        Assertions.assertEquals((Integer) 1, aQueue.poll());
+        Assertions.assertEquals(STARTING_SIZE - 1, aQueue.size());
+        Assertions.assertEquals((Integer) 2, aQueue.poll());
+        Assertions.assertEquals((Integer) 3, aQueue.poll());
+        Assertions.assertNull(aQueue.poll());
+    }
+
+    /**
+     * Make sure Remove method works for Queue.
+     * Make sure it removes the object from queue and that the queue gets reorganized.
+     */
+    @Test
+    public void testQueueRemove() {
+        Assertions.assertEquals((Integer) 1, aQueue.remove());
+        Assertions.assertEquals(STARTING_SIZE - 1, aQueue.size());
+        Assertions.assertEquals((Integer) 2, aQueue.remove());
+        Assertions.assertEquals((Integer) 3, aQueue.remove());
+    }
+
+    /**
+     * HashMap (compute, containsKey, containsValue, put, replace)
+     */
+
+
+    @Test
+    public void testHashMapCompute() {
 
     }
 
+    @Test
+    public void testHashMapContainsKey() {
+
+    }
+
+    @Test
+    public void testHashMapContainsValue() {
+
+    }
+
+    @Test
+    public void testHashMapPut() {
+
+    }
+
+    @Test
+    public void testHashMapReplace() {
+
+    }
 }
