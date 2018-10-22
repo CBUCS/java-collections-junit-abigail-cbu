@@ -5,8 +5,8 @@ import java.util.*;
 /**
  * Set (add, clear, contains, containsAll, isEmpty, equals, remove, retainAll, size)
  * LinkedList (add, clear, contains, get, indexOf, isEmpty, lastIndexOf, remove, size, sort)
- * Stack (all methods)
- * Queue (all methods)
+ * Stack (empty, peek, pop, push, search)
+ * Queue (add, element, offer, peek, poll, remove)
  * HashMap (Clear, compute, containsKey, containsValue, equals, get, isEmpty, put, remove, replace, size)
  */
 public class TestArrayList {
@@ -14,7 +14,9 @@ public class TestArrayList {
     private ArrayList<Integer> aList = new ArrayList<Integer>();
     private Set<Integer> aSet = new HashSet<Integer>();
     private LinkedList<Integer> aLink = new LinkedList<Integer>();
-    private int STARTING_SIZE = 0;
+    private Stack<Integer> aStack = new Stack<Integer>();
+    private Queue<Integer> aQueue = new LinkedList<Integer>();
+    private final int STARTING_SIZE = 3;
 
     /**
      * Start each test with 3 values each collection.
@@ -33,7 +35,13 @@ public class TestArrayList {
         aLink.add(2);
         aLink.add(3);
 
-        STARTING_SIZE = aList.size();
+        aStack.push(1);
+        aStack.push(2);
+        aStack.push(3);
+
+        aQueue.add(1);
+        aQueue.add(2);
+        aQueue.add(3);
     }
 
     /**
@@ -151,6 +159,11 @@ public class TestArrayList {
 
     }
 
+    /**
+     * Test Contains and ContainsAll method for both Set and Linked List.
+     * Make sure that the collection contains an Integer.
+     * Make sure that the collection does not contain an Integer.
+     */
     @Test
     public void testContainsAndContainsAll() {
         /*** SET ***/
@@ -197,6 +210,10 @@ public class TestArrayList {
         Assertions.assertFalse(aSet.equals(tmpSet));
     }
 
+    /**
+     * Test RetainAll() for Set by making sure that it
+     * returns true if the set contains all the elements from the tmpSet.
+     */
     @Test
     public void testRetainAll() {
         /*** SET ***/
@@ -208,17 +225,25 @@ public class TestArrayList {
         Assertions.assertFalse(aSet.retainAll(tmpSet));
     }
 
+    /**
+     * Test the Get() for linked list.
+     * Make sure that it gets the correct object from specified index.
+     */
     @Test
     public void testGet() {
         /*** LINKED LIST ***/
-        Assertions.assertEquals((Integer)1, aLink.get(0));
+        Assertions.assertEquals((Integer) 1, aLink.get(0));
         Assertions.assertNotEquals(2, aLink.get(0));
 //        Assertions.assertNotEquals(1, aLink.get(4)); // tried to test IndexOutOfBoundsException
         aLink.remove(0);
-        Assertions.assertNotEquals(1,aLink.get(0));
+        Assertions.assertNotEquals(1, aLink.get(0));
 
     }
 
+    /**
+     * IndexOf should return the index of the object being searched
+     * LastIndexOf should return the last index of the object being searched
+     */
     @Test
     public void testIndexOfAndLastIndexOf() {
         /*** LINKED LIST ***/
@@ -229,13 +254,124 @@ public class TestArrayList {
         Assertions.assertNotEquals(0, aLink.lastIndexOf(1));
     }
 
+    /**
+     * Depending on the comparator, the sort() for linked list
+     * should sort accordingly.
+     */
     @Test
     public void testSort() {
         /*** LINKED LIST ***/
         Assertions.assertArrayEquals(new Integer[]{1, 2, 3}, aLink.toArray());
         aLink.add(1);
         Assertions.assertArrayEquals(new Integer[]{1, 2, 3, 1}, aLink.toArray());
+
         aLink.sort(Comparator.naturalOrder()); // array sorted to be {1, 1, 2, 3}
-        Assertions.assertNotEquals(new Integer[]{1, 2, 3, 1}, aLink.toArray());
+        Assertions.assertNotEquals(new Object[]{1, 2, 3, 1}, aLink.toArray());
+
+        aLink.sort(Comparator.reverseOrder());
+        Assertions.assertNotEquals(new Object[]{1, 2, 3, 1}, aLink.toArray());
     }
+
+
+    /**
+     * Stack (empty, peek, pop, push, search)
+     */
+
+    /**
+     * Make sure Empty method works for Stack
+     * Should return true if the stack is empty
+     * Should return false if the stack is not empty
+     */
+    @Test
+    public void testStackEmpty() {
+        Assertions.assertFalse(aStack.empty());
+
+        Stack<Integer> tmpStack = new Stack<Integer>();
+        Assertions.assertTrue(tmpStack.empty());
+    }
+
+    /**
+     * Make sure that Peek method works for Stack.
+     * Should return Integer from top of Stack.
+     * Should not have removed the object that was peeked.
+     */
+    @Test
+    public void testStackPeek() {
+        Assertions.assertEquals((Integer) 3, aStack.peek());
+        Assertions.assertEquals(STARTING_SIZE, aStack.size());
+        aStack.push(4);
+        Assertions.assertNotEquals(3, aStack.peek());
+        Assertions.assertEquals(STARTING_SIZE + 1, aStack.size());
+    }
+
+    /**
+     * Make sure Pop method works for Stack.
+     * Make sure it removes the last object added to the stack.
+     * Make sure can't remove an object from an empty stack.
+     */
+    @Test
+    public void testStackPop() {
+        Integer lastElement = aStack.peek();
+        Assertions.assertEquals(lastElement, aStack.pop()); // remove "3"
+        aStack.pop(); // remove "2"
+        aStack.pop(); // remove "1"
+
+        Assertions.assertTrue(aStack.empty());
+    }
+
+    /**
+     * Make sure Push method works for stack.
+     * Make sure you can add an object to stack.
+     * Make sure the size of the stack increases.
+     * Make sure you can only add Integers.
+     */
+    @Test
+    public void testStackPush() {
+        Assertions.assertEquals((Integer) 4, aStack.push(4));
+//        Assertions.assertFalse((Integer)5, aStack.push("5")); // intellij already checks what type you push
+        Assertions.assertEquals(STARTING_SIZE + 1, aStack.size());
+
+    }
+
+    /**
+     * Make sure you are able to search through a stack.
+     * Make sure it returns the index of the object in the stack.
+     * Make sure it doesn't find an object that is not within the stack.
+     */
+    @Test
+    public void testStackSearch() {
+        Assertions.assertEquals(1, aStack.search(3));
+        Assertions.assertEquals(2, aStack.search(2));
+        Assertions.assertEquals(3, aStack.search(1));
+
+        Assertions.assertEquals(-1, aStack.search(0));
+    }
+
+    /**
+     *  Queue (add, element, offer, peek, poll, remove)
+     */
+
+    /**
+     * Make sure add method works for queue.
+     * Make sure you can add an object to queue.
+     * Make sure the size of the queue increases.
+     * Make sure you can only add Integers.
+     */
+    @Test
+    public void testQueueAdd() {
+        Assertions.assertTrue(aQueue.add(1));
+        Assertions.assertEquals(STARTING_SIZE + 1, aQueue.size());
+    }
+
+    /**
+     * Make sure Element method works for Queue.
+     * It should only show you which object is at the head of the queue.
+     * Make sure if you remove the head of the queue, it gets the new head object.
+     */
+    @Test
+    public void testQueueElement() {
+        Assertions.assertEquals((Integer)1, aQueue.element());
+
+    }
+
 }
