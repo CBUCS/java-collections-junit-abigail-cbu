@@ -173,7 +173,6 @@ public class TestArrayList {
         Assertions.assertTrue(aSet.containsAll(tmpSet));
         tmpSet.add("1");
         Assertions.assertFalse(aSet.containsAll(tmpSet));
-
     }
 
     /**
@@ -196,8 +195,6 @@ public class TestArrayList {
         Assertions.assertTrue(aSet.equals(tmpSet));
         tmpSet.add(4);
         Assertions.assertFalse(aSet.equals(tmpSet));
-
-
     }
 
     @Test
@@ -207,6 +204,38 @@ public class TestArrayList {
         Set tmpSet = new HashSet(Arrays.asList(elements));
 
         Assertions.assertTrue(aSet.retainAll(tmpSet));
+        tmpSet.add(4);
+        Assertions.assertFalse(aSet.retainAll(tmpSet));
+    }
 
+    @Test
+    public void testGet() {
+        /*** LINKED LIST ***/
+        Assertions.assertEquals((Integer)1, aLink.get(0));
+        Assertions.assertNotEquals(2, aLink.get(0));
+//        Assertions.assertNotEquals(1, aLink.get(4)); // tried to test IndexOutOfBoundsException
+        aLink.remove(0);
+        Assertions.assertNotEquals(1,aLink.get(0));
+
+    }
+
+    @Test
+    public void testIndexOfAndLastIndexOf() {
+        /*** LINKED LIST ***/
+        Assertions.assertEquals(0, aLink.indexOf(1));
+        Assertions.assertEquals(0, aLink.lastIndexOf(1));
+        aLink.remove(0);
+        Assertions.assertNotEquals(0, aLink.indexOf(1));
+        Assertions.assertNotEquals(0, aLink.lastIndexOf(1));
+    }
+
+    @Test
+    public void testSort() {
+        /*** LINKED LIST ***/
+        Assertions.assertArrayEquals(new Integer[]{1, 2, 3}, aLink.toArray());
+        aLink.add(1);
+        Assertions.assertArrayEquals(new Integer[]{1, 2, 3, 1}, aLink.toArray());
+        aLink.sort(Comparator.naturalOrder()); // array sorted to be {1, 1, 2, 3}
+        Assertions.assertNotEquals(new Integer[]{1, 2, 3, 1}, aLink.toArray());
     }
 }
