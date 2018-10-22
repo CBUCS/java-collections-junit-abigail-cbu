@@ -250,7 +250,7 @@ public class JUnitCollectionTesting {
         Assertions.assertTrue(aHashMap.equals(tmpHashMap));
         tmpHashMap.put(1, "one");
         Assertions.assertTrue(aHashMap.equals(tmpHashMap));
-        tmpHashMap.put(4,"four");
+        tmpHashMap.put(4, "four");
         Assertions.assertFalse(aHashMap.equals(tmpHashMap));
     }
 
@@ -320,7 +320,6 @@ public class JUnitCollectionTesting {
         aLink.sort(Comparator.reverseOrder());
         Assertions.assertNotEquals(new Object[]{1, 2, 3, 1}, aLink.toArray());
     }
-
 
     /**
      * Stack (empty, peek, pop, push, search)
@@ -502,28 +501,66 @@ public class JUnitCollectionTesting {
      */
 
 
+    /**
+     * I don't understand this method...
+     */
     @Test
     public void testHashMapCompute() {
-
+        aHashMap.compute(1, (key, value) -> value == null ? "bad" : "good");
     }
 
+    /**
+     * Make sure ContainsKey method works for hash maps.
+     * Make sure returns true if hash map has specified key.
+     * Make sure returns false if hash map does not have the specified key.
+     * Make sure it is okay to check if there is a null value.
+     */
     @Test
     public void testHashMapContainsKey() {
-
+        Assertions.assertTrue(aHashMap.containsKey(1));
+        Assertions.assertFalse(aHashMap.containsKey(4));
+        Assertions.assertFalse(aHashMap.containsKey(null));
+        aHashMap.clear();
+        Assertions.assertFalse(aHashMap.containsKey(null));
     }
 
+    /**
+     * Make sure ContainsValue method works for hash maps.
+     * Make sure returns true if hash map has specified value.
+     * Return false if value is not in hash map.
+     */
     @Test
     public void testHashMapContainsValue() {
-
+        Assertions.assertTrue(aHashMap.containsValue("one"));
+        Assertions.assertFalse(aHashMap.containsValue("five"));
     }
 
+    /**
+     * Make sure Put method works for hash maps.
+     * Be able to insert key, value pair int hash map.
+     * Should return previous value it is mapped to for that key.
+     */
     @Test
     public void testHashMapPut() {
+        Assertions.assertEquals("one", aHashMap.put(1, "1"));
+        Assertions.assertEquals(STARTING_SIZE, aHashMap.size()); // still the same size because we put an existing key
+        Assertions.assertEquals(null, aHashMap.put(4, "four"));
+        Assertions.assertEquals(STARTING_SIZE + 1, aHashMap.size());
 
     }
 
+    /**
+     * Make sure Replace method works in hash maps.
+     * Make sure the previous element no longer exists in hash map.
+     * Make sure map did not reduce in size.
+     * Should return previous value it is mapped to for that key.
+     */
     @Test
     public void testHashMapReplace() {
+        Assertions.assertEquals("one", aHashMap.replace(1, "1"));
+        Assertions.assertEquals(STARTING_SIZE, aHashMap.size());
+        Assertions.assertTrue( aHashMap.replace(2, "two", "2"));
+        Assertions.assertFalse( aHashMap.replace(2, "two", "2")); // old value should be "2"
 
     }
 }

@@ -9,3 +9,9 @@ The first 10 test methods contain testing for Set, Linked List, and Hash Map met
 (i.e. size, remove, etc.).
 
 And then, I separated the testing methods for Stack, Queue, and any Hash Map testing that I did not do before.
+
+For each method, I tested if the method returns or excutes the method according to the description in the Java docs.
+Then, I tried to break the method by testing things that shouldn't happen
+ (i.e. return an element that does not exist in the collection)
+ 
+ There is a total of 26 Test methods.
