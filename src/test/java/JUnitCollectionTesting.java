@@ -9,7 +9,7 @@ import java.util.*;
  * Queue (add, element, offer, peek, poll, remove)
  * HashMap (Clear, compute, containsKey, containsValue, equals, get, isEmpty, put, remove, replace, size)
  */
-public class TestArrayList {
+public class JUnitCollectionTesting {
 
     private ArrayList<Integer> aList = new ArrayList<Integer>();
     private Set<Integer> aSet = new HashSet<Integer>();

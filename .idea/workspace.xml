@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e0ee7fd-1161-4272-acab-faea314003a8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestArrayList.java" afterPath="$PROJECT_DIR$/src/test/java/TestArrayList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/TestArrayList.java" afterPath="$PROJECT_DIR$/src/test/java/JUnitCollectionTesting.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,58 +16,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestArrayList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
+      <file leaf-file-name="JUnitCollectionTesting.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/JUnitCollectionTesting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-705">
-              <caret line="276" column="26" lean-forward="false" selection-start-line="276" selection-start-column="26" selection-end-line="276" selection-end-column="26" />
+            <state relative-caret-position="-812">
+              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="35" />
               <folding>
-                <element signature="e#837#854#0" expanded="true" />
-                <element signature="docComment;method#initialize#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testSize#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testSize#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testAdd#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testAdd#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testRemoveAndIsEmpty#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testRemoveAndIsEmpty#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testClear#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testClear#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testContainsAndContainsAll#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testContainsAndContainsAll#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testEquals#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testEquals#0;class#TestArrayList#0" expanded="false" />
-                <element signature="e#9098#9115#0" expanded="true" />
-                <element signature="docComment;method#testRetainAll#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testRetainAll#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testGet#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testGet#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testIndexOfAndLastIndexOf#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testIndexOfAndLastIndexOf#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testSort#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testSort#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testStackEmpty#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testStackEmpty#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testStackPeek#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testStackPeek#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testStackPop#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testStackPop#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testStackPush#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testStackPush#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testStackSearch#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testStackSearch#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testQueueAdd#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testQueueAdd#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testQueueElement#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testQueueElement#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testQueueOffer#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testQueueOffer#0;class#TestArrayList#0" expanded="false" />
-                <element signature="e#15591#15677#0" expanded="false" />
-                <element signature="docComment;method#testQueuePeek#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testQueuePeek#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testQueuePoll#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testQueuePoll#0;class#TestArrayList#0" expanded="false" />
-                <element signature="docComment;method#testQueueRemove#0;class#TestArrayList#0" expanded="false" />
-                <element signature="method#testQueueRemove#0;class#TestArrayList#0" expanded="false" />
+                <element signature="e#846#863#0" expanded="true" />
+                <element signature="docComment;method#initialize#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testSize#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testSize#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testAdd#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testAdd#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testRemoveAndIsEmpty#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testRemoveAndIsEmpty#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testClear#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testClear#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testContainsAndContainsAll#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testContainsAndContainsAll#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testEquals#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testEquals#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="e#9107#9124#0" expanded="true" />
+                <element signature="docComment;method#testRetainAll#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testRetainAll#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testGet#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testGet#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testIndexOfAndLastIndexOf#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testIndexOfAndLastIndexOf#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testSort#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testSort#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testStackEmpty#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testStackEmpty#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testStackPeek#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testStackPeek#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testStackPop#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testStackPop#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testStackPush#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testStackPush#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testStackSearch#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testStackSearch#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testQueueAdd#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testQueueAdd#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testQueueElement#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testQueueElement#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testQueueOffer#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testQueueOffer#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="e#15600#15686#0" expanded="false" />
+                <element signature="docComment;method#testQueuePeek#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testQueuePeek#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testQueuePoll#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testQueuePoll#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="docComment;method#testQueueRemove#0;class#JUnitCollectionTesting#0" expanded="false" />
+                <element signature="method#testQueueRemove#0;class#JUnitCollectionTesting#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -101,6 +102,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestArrayList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/JUnitCollectionTesting.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -180,7 +183,107 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestArrayList.testGet">
+  <component name="RunManager" selected="JUnit.JUnitCollectionTesting.testGet">
+    <configuration name="JUnitCollectionTesting.testClear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JUnit Testing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnitCollectionTesting" />
+      <option name="METHOD_NAME" value="testClear" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="JUnitCollectionTesting.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JUnit Testing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnitCollectionTesting" />
+      <option name="METHOD_NAME" value="testEquals" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="JUnitCollectionTesting.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JUnit Testing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnitCollectionTesting" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="JUnitCollectionTesting.testRemoveAndIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JUnit Testing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnitCollectionTesting" />
+      <option name="METHOD_NAME" value="testRemoveAndIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="JUnitCollectionTesting.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JUnit Testing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JUnitCollectionTesting" />
+      <option name="METHOD_NAME" value="testSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="JUnitTesting" type="JUnit" factoryName="JUnit" singleton="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JUnit Testing" />
@@ -200,106 +303,6 @@
       </option>
       <envs />
       <dir value="$PROJECT_DIR$/src/test/java" />
-      <patterns />
-    </configuration>
-    <configuration name="TestArrayList.testClear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JUnit Testing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testClear" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TestArrayList.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JUnit Testing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testEquals" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TestArrayList.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JUnit Testing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testGet" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TestArrayList.testRemoveAndIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JUnit Testing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testRemoveAndIsEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TestArrayList.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JUnit Testing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestArrayList" />
-      <option name="METHOD_NAME" value="testSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
       <patterns />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -385,19 +388,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.JUnitTesting" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestArrayList.testSize" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestArrayList.testRemoveAndIsEmpty" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestArrayList.testClear" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestArrayList.testEquals" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TestArrayList.testGet" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testSize" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testRemoveAndIsEmpty" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testClear" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testEquals" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testGet" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestArrayList.testGet" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestArrayList.testEquals" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestArrayList.testClear" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestArrayList.testRemoveAndIsEmpty" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestArrayList.testSize" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testGet" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testEquals" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testClear" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testRemoveAndIsEmpty" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JUnitCollectionTesting.testSize" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +414,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539753048738</updated>
-      <workItem from="1539753054732" duration="20094000" />
+      <workItem from="1539753054732" duration="20568000" />
     </task>
     <servers />
   </component>
@@ -448,7 +451,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20094000" />
+    <option name="totallyTimeSpent" value="20568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
@@ -462,7 +465,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22879177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22879177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -512,57 +515,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestArrayList.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="99" lean-forward="false" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/JUnitCollectionTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-705">
-          <caret line="276" column="26" lean-forward="false" selection-start-line="276" selection-start-column="26" selection-end-line="276" selection-end-column="26" />
+        <state relative-caret-position="-812">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="35" />
           <folding>
-            <element signature="e#837#854#0" expanded="true" />
-            <element signature="docComment;method#initialize#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testSize#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testSize#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testAdd#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testAdd#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testRemoveAndIsEmpty#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testRemoveAndIsEmpty#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testClear#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testClear#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testContainsAndContainsAll#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testContainsAndContainsAll#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testEquals#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testEquals#0;class#TestArrayList#0" expanded="false" />
-            <element signature="e#9098#9115#0" expanded="true" />
-            <element signature="docComment;method#testRetainAll#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testRetainAll#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testGet#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testGet#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testIndexOfAndLastIndexOf#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testIndexOfAndLastIndexOf#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testSort#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testSort#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testStackEmpty#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testStackEmpty#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testStackPeek#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testStackPeek#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testStackPop#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testStackPop#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testStackPush#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testStackPush#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testStackSearch#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testStackSearch#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testQueueAdd#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testQueueAdd#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testQueueElement#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testQueueElement#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testQueueOffer#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testQueueOffer#0;class#TestArrayList#0" expanded="false" />
-            <element signature="e#15591#15677#0" expanded="false" />
-            <element signature="docComment;method#testQueuePeek#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testQueuePeek#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testQueuePoll#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testQueuePoll#0;class#TestArrayList#0" expanded="false" />
-            <element signature="docComment;method#testQueueRemove#0;class#TestArrayList#0" expanded="false" />
-            <element signature="method#testQueueRemove#0;class#TestArrayList#0" expanded="false" />
+            <element signature="e#846#863#0" expanded="true" />
+            <element signature="docComment;method#initialize#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testSize#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testSize#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testAdd#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testAdd#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testRemoveAndIsEmpty#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testRemoveAndIsEmpty#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testClear#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testClear#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testContainsAndContainsAll#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testContainsAndContainsAll#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testEquals#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testEquals#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="e#9107#9124#0" expanded="true" />
+            <element signature="docComment;method#testRetainAll#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testRetainAll#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testGet#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testGet#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testIndexOfAndLastIndexOf#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testIndexOfAndLastIndexOf#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testSort#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testSort#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testStackEmpty#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testStackEmpty#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testStackPeek#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testStackPeek#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testStackPop#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testStackPop#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testStackPush#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testStackPush#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testStackSearch#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testStackSearch#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testQueueAdd#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testQueueAdd#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testQueueElement#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testQueueElement#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testQueueOffer#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testQueueOffer#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="e#15600#15686#0" expanded="false" />
+            <element signature="docComment;method#testQueuePeek#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testQueuePeek#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testQueuePoll#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testQueuePoll#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="docComment;method#testQueueRemove#0;class#JUnitCollectionTesting#0" expanded="false" />
+            <element signature="method#testQueueRemove#0;class#JUnitCollectionTesting#0" expanded="false" />
           </folding>
         </state>
       </provider>
